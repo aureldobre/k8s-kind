@@ -1,7 +1,7 @@
 # kind-multinode-local
 
 In K8s-multinode-local project we made a kubernetes kluster with one master and more nodes using VM as nodes.
-The evolution VM -> docker has inspired the "kind" project: replace VM with docker containers already provisooned as nodes images.
+The evolution VM -> docker has inspired the "kind" project: replace VM with docker containers already provisioned as nodes images.
 
 ### Create a one node cluster:
 	kind create cluster			# cluster name: kind
