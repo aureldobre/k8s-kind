@@ -15,6 +15,7 @@ The evolution VM -> docker has inspired the "kind" project: replace VM with dock
 	- role: control-plane
 	- role: worker
 	- role: worker
+	EOF
 
 ### Create a HA control-plane:
 	cat <<EOF | kind create cluster --config=-
@@ -27,8 +28,9 @@ The evolution VM -> docker has inspired the "kind" project: replace VM with dock
 	- role: worker
 	- role: worker
 	- role: worker
+	EOF
 
-After cluster creation ans configuration, kubectl can beused.
+After cluster creation and configuration, kubectl can be used.
 The new cluster context will be inserted in ~/.kube/config.
 
 ### Delete cluster
